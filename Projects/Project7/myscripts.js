@@ -1,9 +1,9 @@
 // JavaScript Document
 
-PrintButton1 = new Image
-	PrintButton2 = new Image
-	logo1 = new Image
-	logo2 = new Image
+const PrintButton1 = new Image
+const PrintButton2 = new Image
+const logo1 = new Image
+const logo2 = new Image
 if (document.images) {
 	PrintButton1.src = "./images/print1.png"
 	PrintButton2.src = "./images/print2.png"
@@ -45,7 +45,7 @@ if (document.images) {
 
 			textTitle=titleArray[imgID];
 
-      			textDiv.innerHTML = textTitle;
+      		textDiv.innerHTML = textTitle;
 		}
 			
 		function preloadImages() {		
