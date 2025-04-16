@@ -5,10 +5,10 @@ PrintButton1 = new Image
 	logo1 = new Image
 	logo2 = new Image
 if (document.images) {
-	PrintButton1.src = "images/print5.gif"
-	PrintButton2.src = "images/print6.gif"
-	logo1.src = "images/logo1.png"
-	logo2.src = "images/logo2.png"
+	PrintButton1.src = "./images/print1.png"
+	PrintButton2.src = "./images/print2.png"
+	logo1.src = "./images/logo1.png"
+	logo2.src = "./images/logo2.png"
 }
 
 
