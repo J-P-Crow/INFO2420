@@ -27,7 +27,7 @@ const titleArray = new Array(
 	'Master Chef Pierre DeBois'
 	);
 			
-const imgPath = "./Images/cookingfs/";
+const imgPath = "./images/cookingfs/";
 		
 function swapImage(imgID) {
 	const theImage = document.getElementById('theImage');
