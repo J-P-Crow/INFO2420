@@ -4,7 +4,7 @@ const PrintButton1 = new Image
 const PrintButton2 = new Image
 const logo1 = new Image
 const logo2 = new Image
-if (document.images) {
+if (document.images && logo1 && logo2) {
 	PrintButton1.src = "./images/print1.png"
 	PrintButton2.src = "./images/print2.png"
 	logo1.src = "./images/logo1.png"
@@ -12,46 +12,41 @@ if (document.images) {
 }
 
 
-		var imgArray = new Array(
-			'Chef2Lg.jpg',
-			'Food1Lg.jpg',
-			'ForkKnifeLg.jpg',
-			'Chef4Lg.jpg'
-			
-
-		);
+const imgArray = new Array(
+	'Chef2Lg.jpg',
+	'Food1Lg.jpg',
+	'ForkKnifeLg.jpg',
+	'Chef4Lg.jpg'
+	);
 
 
-		var titleArray = new Array(
-			'Master Chef Pierre DeBois',
-			'Food Basket',
-			'Fork and Knife on a plate with a napkin',
-			'Master Chef Pierre DeBois'
+const titleArray = new Array(
+	'Master Chef Pierre DeBois',
+	'Food Basket',
+	'Fork and Knife on a plate with a napkin',
+	'Master Chef Pierre DeBois'
+	);
 			
-		);
-			
-		var imgPath = "./Images/CookingFS/";
+const imgPath = "./Images/cookingfs/";
 		
-		function swapImage(imgID) {
+function swapImage(imgID) {
+	const theImage = document.getElementById('theImage');
+	const textDiv = document.getElementById('bottomText');
 
-			var theImage = document.getElementById('theImage');
-			var textDiv = document.getElementById('bottomText');
+	let newImg;
+	let textTitle;
 
-			var newImg;
-			var textTitle;
+	newImg = imgArray[imgID];
+	theImage.src = imgPath + newImg;
 
-			newImg = imgArray[imgID];
-			theImage.src = imgPath + newImg;
-
-			textTitle=titleArray[imgID];
-
-      		textDiv.innerHTML = textTitle;
-		}
+	textTitle=titleArray[imgID];
+	textDiv.innerHTML = textTitle;
+}
 			
-		function preloadImages() {		
-			for(var i = 0; i < imgArray.length; i++) {
-				var tmpImg = new Image;
-				tmpImg.src = imgPath + imgArray[i];
-			}
-		}
+function preloadImages() {	
+	for(var i = 0; i < imgArray.length; i++) {
+		var tmpImg = new Image;
+			tmpImg.src = imgPath + imgArray[i];
+	}
+}
 		
