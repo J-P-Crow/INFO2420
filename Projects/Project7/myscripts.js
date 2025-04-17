@@ -13,10 +13,10 @@ if (document.images && logo1 && logo2) {
 
 
 const imgArray = new Array(
-	'Chef2Lg.jpg',
-	'Food1Lg.jpg',
-	'ForkKnifeLg.jpg',
-	'Chef4Lg.jpg'
+	'./images/cookingfs/Chef2Lg.jpg',
+	'./images/cookingfs/Food1Lg.jpg',
+	'./images/cookingfs/ForkKnifeLg.jpg',
+	'./images/cookingfs/Chef4Lg.jpg'
 	);
 
 
